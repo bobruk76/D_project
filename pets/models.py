@@ -17,7 +17,7 @@ class Aninal(models.Model):
                               verbose_name="Порода")
 
     def __str__(self):
-        return "{} ({}, {})".format(self.name, self.breed)
+        return '{} ({})'.format(self.name, self.breed)
 
     def get_absolute_url(self):
         return reverse('animal-detail', kwargs={'pk': self.pk})
