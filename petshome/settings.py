@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'petshome.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
-        'PASSWORD': 'mypassword',
+        'NAME': 'petshome',
+        'USER': 'petshomeuser',
+        'PASSWORD': 'petshomeuser',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
