@@ -21,3 +21,11 @@ class Aninal(models.Model):
 
     def get_absolute_url(self):
         return reverse('animal-detail', kwargs={'pk': self.pk})
+
+class Breed(models.Model):
+
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True)
+    name = models.CharField(max_length=256, verbose_name="Название породы")
+
+    def get_absolute_url(self):
+        return reverse('breed-detail', kwargs={'pk': self.pk})
