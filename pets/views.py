@@ -5,7 +5,7 @@ from django.shortcuts import redirect, render
 from django.http.response import HttpResponseRedirect
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from django.forms import formset_factory
-from pets.forms import (AnimalForm,)
+from pets.forms import AnimalForm
 from pets.models import (Animal, Breed)
 from django.urls import reverse_lazy
 

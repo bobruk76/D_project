@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pets',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +65,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'pets',
             ],
         },
     },
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'petshome',
         'USER': 'petshomeuser',
         'PASSWORD': 'petshomeuser',
-        'HOST': '127.0.0.1',
+        'HOST': '192.168.168.242',
         'PORT': '5432',
     }
 }
