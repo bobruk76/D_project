@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="text-center">Количество представленных авторов: {{ object_list|length }}</h1>
+    <div class="container">
+        <div class="list-group col-6 mx-auto">
+            <form action="create" class="justify-content-start mt-1">
+                <button class="btn btn-outline-success col-4" >Новый</button>
+            </form>
+            {% for author in object_list %}
+                <a class="list-group-item list-group-item-action" href="{{author.id}}/">{{ author.full_name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

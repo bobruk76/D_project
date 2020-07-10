@@ -6,7 +6,7 @@ from django.db import models
 from django.urls import reverse
 
 # Create your models here.
-class Aninal(models.Model):
+class Animal(models.Model):
 
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     name = models.CharField(max_length=256, verbose_name="Кличка")
