@@ -6,7 +6,7 @@ from .views import *
 app_name = 'pets'
 urlpatterns = [
     path('animal/', AnimalList.as_view(), name='animal_list'),
-    path('animal/<int:pk>/', AnimalUpdate.as_view(), name='animal_edit'),
+    path('animal/<uuid:pk>/', AnimalDetailView.as_view(), name='animal_view'),
 
 
     path('', IndexPageView.as_view()),
