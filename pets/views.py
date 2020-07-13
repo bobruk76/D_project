@@ -24,7 +24,5 @@ class AnimalList(ListView):
 
 class AnimalDetailView(DetailView):
     model = Animal
-    # form_class = AnimalForm
-
     template_name = '_view.html'
 
