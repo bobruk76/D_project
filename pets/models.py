@@ -29,3 +29,6 @@ class Breed(models.Model):
 
     def get_absolute_url(self):
         return reverse('breed-detail', kwargs={'pk': self.pk})
+
+    def __str__(self):
+        return '{}'.format(self.name)
