@@ -10,4 +10,6 @@ urlpatterns = [
     path('animal/<int:pk>/', AnimalUpdate.as_view(), name='animal_edit'),
     path('animal/<int:pk>/delete/', AnimalDelete.as_view(), name='animal_delete'),
 
+    path('', IndexPageView.as_view()),
+    path('contacts/', ContactsView.as_view()),
 ]

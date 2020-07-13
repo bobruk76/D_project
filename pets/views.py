@@ -3,13 +3,22 @@ from django.template import loader
 from django.shortcuts import redirect, render
 
 from django.http.response import HttpResponseRedirect
-from django.views.generic import CreateView, ListView, UpdateView, DeleteView
+from django.views.generic import CreateView, ListView, UpdateView, DeleteView, TemplateView
 from django.forms import formset_factory
 from pets.forms import AnimalForm
 from pets.models import (Animal, Breed)
 from django.urls import reverse_lazy
 
 # Create your views here.
+class IndexPageView(TemplateView):
+
+    template_name = 'index.html'
+
+class ContactsView(TemplateView):
+
+    template_name = 'contacts.html'
+
+
 class AnimalList(ListView):
     model = Animal
     template_name = 'animal_list.html'
