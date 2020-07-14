@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'petshome.wsgi.application'
 #         'HOST': '192.168.168.242',
 #         'PORT': '5432',
 #     }
-# }
+}
 # Activate Django-Heroku.
 # django_heroku.settings(locals())
 DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
