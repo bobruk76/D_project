@@ -5,7 +5,6 @@ from django.shortcuts import redirect, render
 from django.http.response import HttpResponseRedirect
 from django.views.generic import ListView, DetailView, TemplateView
 from django.forms import formset_factory
-from pets.forms import AnimalForm
 from pets.models import (Animal)
 from django.urls import reverse_lazy
 
@@ -16,6 +15,8 @@ class IndexPageView(TemplateView):
 class ContactsView(TemplateView):
     template_name = 'contacts.html'
 
+class AboutUsView(TemplateView):
+    template_name = 'about_us.html'
 
 class AnimalList(ListView):
     model = Animal
