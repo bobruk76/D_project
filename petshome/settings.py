@@ -15,10 +15,6 @@ import dj_database_url
 import django_heroku
 
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -27,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '*2v^4ywyj6z%mhv6&xoptuvce^sa6!woocza!d!vo_aku=@9qh'
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '*2v^4ywyj6z%mhv6&xoptuvce^sa6!woocza!d!vo_aku=@9qh'
+# SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -91,7 +87,8 @@ WSGI_APPLICATION = 'petshome.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-import dj_database_url
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 
 # Password validation

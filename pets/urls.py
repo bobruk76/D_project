@@ -11,4 +11,5 @@ urlpatterns = [
 
     path('', IndexPageView.as_view()),
     path('contacts/', ContactsView.as_view()),
+    path('about-us/', AboutUsView.as_view()),
 ]
