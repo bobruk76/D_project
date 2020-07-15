@@ -1,4 +1,4 @@
-# petty_home
+# petshome
 Проект настроен для деплоя на heroku.
 
 Необходимо добавить postgres в heroku resources.
@@ -7,4 +7,7 @@
 
 Запустить деплой.
 
-Страница на heroku: https://pettyhome.herokuapp.com/pets/
+Страница на heroku: https://animalstimehome.herokuapp.com/
+Админка:
+admin
+d[jlfytn
