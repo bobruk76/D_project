@@ -100,8 +100,8 @@ WSGI_APPLICATION = 'petshome.wsgi.application'
 # }
 # Activate Django-Heroku.
 # django_heroku.settings(locals())
+DATABASE_URL = 'postgres://howqmgryyclzew:6f5e67c30d9d0a6f2ae5854f6a3ac7841d96fd37db6022bebe60aa07b22b7073@ec2-54-246-115-40.eu-west-1.compute.amazonaws.com:5432/d247pcdaev23ff'
 DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
