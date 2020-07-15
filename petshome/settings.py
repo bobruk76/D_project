@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'petshome.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #         'NAME': 'petshome',
 #         'USER': 'petshomeuser',
 #         'PASSWORD': 'petshomeuser',
